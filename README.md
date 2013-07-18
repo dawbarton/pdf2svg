@@ -28,3 +28,6 @@ Copyright (C) 2007-2013 David Barton (davebarton@cityinthesky.co.uk)
 
 Copyright (C) 2007 Matthew Flaschen (matthew.flaschen@gatech.edu)
 Updated to allow conversion of all pages at once.
+
+Copyright (C) 2008 Ed Grace
+Added GNU Autotools commands.
