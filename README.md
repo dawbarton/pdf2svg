@@ -13,8 +13,8 @@ Prerequisites:
 
 To make and install pdf2svg:
 
-1) Download pdf2svg-0.2.1.tar.gz and unpack
-2) Change to the pdf2svg-0.2.1 directory
+1) Download pdf2svg-0.2.2.tar.gz and unpack
+2) Change to the pdf2svg-0.2.2 directory
 3) Do the normal ./configure && make && make install
 
 
@@ -23,7 +23,7 @@ Usage:
 pdf2svg <input.pdf> <output.svg> [<page no of pdf or "all">]
 
 
-Copyright (C) 2007 David Barton (davebarton@cityinthesky.co.uk)
+Copyright (C) 2007-2013 David Barton (davebarton@cityinthesky.co.uk)
 <http://www.cityinthesky.co.uk/>
 
 Copyright (C) 2007 Matthew Flaschen (matthew.flaschen@gatech.edu)

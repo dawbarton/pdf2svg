@@ -1,4 +1,4 @@
-// Copyright (C) 2007 David Barton (davebarton@cityinthesky.co.uk)
+// Copyright (C) 2007-2013 David Barton (davebarton@cityinthesky.co.uk)
 // <http://www.cityinthesky.co.uk/>
 
 // Copyright (C) 2007 Matthew Flaschen (matthew.flaschen@gatech.edu)
@@ -65,7 +65,7 @@ int convertPage(PopplerPage *page, const char* svgFilename)
     drawcontext = cairo_create(surface);
 
     // Render the PDF file into the SVG file
-    poppler_page_render(page, drawcontext);
+    poppler_page_render_for_printing(page, drawcontext);
     cairo_show_page(drawcontext);
 
     // Close the SVG file
