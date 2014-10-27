@@ -3,11 +3,15 @@ pdf2svg
 
 A simple PDF to SVG converter using the Poppler and Cairo libraries.
 
+For Windows binaries see [http://www.cityinthesky.co.uk/opensource/pdf2svg/](http://www.cityinthesky.co.uk/opensource/pdf2svg/).
+
+For Linux binaries, see your package manager (e.g., "yum install pdf2svg" or "apt-get install pdf2svg").
+
 Prerequisites:
 
-* poppler <http://poppler.freedesktop.org/>
+* poppler [http://poppler.freedesktop.org/](http://poppler.freedesktop.org/)
     - tested with v0.5.4 but other versions may work as well
-* cairo <http://cairographics.org/>
+* cairo [http://cairographics.org/](http://cairographics.org/)
     - tested with v1.2.6 and v1.4.10 but other versions may work as well
 
 
@@ -20,11 +24,11 @@ To make and install pdf2svg:
 
 Usage:
 
-pdf2svg <input.pdf> <output.svg> [<page no of pdf or "all">]
+pdf2svg &lt;input.pdf&gt; &lt;output.svg&gt; \[&lt;page no of pdf or "all"&gt;\]
 
 
 Copyright (C) 2007-2013 David Barton (davebarton@cityinthesky.co.uk)
-<http://www.cityinthesky.co.uk/>
+[http://www.cityinthesky.co.uk/](http://www.cityinthesky.co.uk/)
 
 Copyright (C) 2007 Matthew Flaschen (matthew.flaschen@gatech.edu)
 Updated to allow conversion of all pages at once.
