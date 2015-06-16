@@ -3,7 +3,7 @@ pdf2svg
 
 A simple PDF to SVG converter using the Poppler and Cairo libraries.
 
-For Windows binaries see [http://www.cityinthesky.co.uk/opensource/pdf2svg/](http://www.cityinthesky.co.uk/opensource/pdf2svg/).
+For Windows binaries see <https://github.com/jalios/pdf2svg-windows>.
 
 For Linux binaries, see your package manager (e.g., "yum install pdf2svg" or "apt-get install pdf2svg").
 
