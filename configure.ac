@@ -20,8 +20,6 @@ AC_C_CONST
 PKG_CHECK_MODULES(CAIRO,cairo >= 1.2.6)
 # Use pkg-config to check for the existence of the poppler-glib libraries
 PKG_CHECK_MODULES(POPPLERGLIB,poppler-glib >= 0.5.4)
-# GTK
-PKG_CHECK_MODULES(GTK2,gtk+-2.0)
 
 # Generate the Makefile
 AC_CONFIG_FILES([Makefile])
