@@ -14,7 +14,7 @@ bin_PROGRAMS = pdf2svg
 # N.B. POPPLERGLIB_ should be set by the configure script either using pkg-config, 
 # by guessing where the librarys may be, or by the user specifying.
 pdf2svg_SOURCES = pdf2svg.c
-pdf2svg_CFLAGS = $(CAIRO_CFLAGS) $(GTK2_CFLAGS) $(POPPLERGLIB_CFLAGS) 
-pdf2svg_LDADD = $(CAIRO_LIBS) $(GTK2_LIBS) $(POPPLERGLIB_LIBS) 
+pdf2svg_CFLAGS = $(CAIRO_CFLAGS) $(POPPLERGLIB_CFLAGS) 
+pdf2svg_LDADD = $(CAIRO_LIBS) $(POPPLERGLIB_LIBS) 
 
 MAINTAINERCLEANFILES = Makefile.in
