@@ -24,7 +24,7 @@ To make and install pdf2svg:
 
 Usage:
 
-pdf2svg &lt;input.pdf&gt; &lt;output.svg&gt; \[&lt;page no of pdf or "all"&gt;\]
+pdf2svg <input.pdf> <output.svg> [<page no of pdf or "all">]
 
 
 Copyright (C) 2007-2013 David Barton (davebarton@cityinthesky.co.uk)
