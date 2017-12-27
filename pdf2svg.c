@@ -123,12 +123,18 @@ int main(int argn, char *args[])
 	}
 	else {
 		if(strcmp(pageLabel, "all") == 0) {
+			char *p;
 			int curError;
 			int pageCount = poppler_document_get_n_pages(pdffile);
 
 			if(pageCount > 9999999) {
 				fprintf(stderr, "Too many pages (>9,999,999)\n");
 				return -5;
+			}
+
+			p = strstr(svgFilename, ".svg");
+			if (p) {
+				*p = '\0';
 			}
 
 			size_t svgFilenameBufLen = strlen(svgFilename) + 1;
@@ -138,7 +144,7 @@ int main(int argn, char *args[])
 			int pageInd;
 			for(pageInd = 0; pageInd < pageCount; pageInd++) {
 				while (1) {
-					size_t _wr_len = snprintf(svgFilenameBuffer, svgFilenameBufLen, svgFilename, pageInd + 1);
+					size_t _wr_len = snprintf(svgFilenameBuffer, svgFilenameBufLen, "%s-%d.svg", svgFilename, pageInd + 1);
 					if (_wr_len >= svgFilenameBufLen) {
 						svgFilenameBufLen = _wr_len + 1;
 						svgFilenameBuffer = (char*)realloc(svgFilenameBuffer, svgFilenameBufLen);
