@@ -1,10 +1,11 @@
-.TH PDF2SVG 1 "14 Jun 2018" "0.2.3" "User Manual"
+.TH PDF2SVG 1 "02 Jun 2020" "0.2.4" "User Manual"
 .SH NAME
 pdf2svg \- PDF to SVG convertor
 .SH SYNOPSIS
 .B pdf2svg
 .RI pdffile
 .RI svgfile
+.RI [ dpi=72 ]
 .RI [ "page number" ]
 .SH DESCRIPTION
 pdf2svg is a tiny command-line utility using Cairo and Poppler to
@@ -16,20 +17,28 @@ The program does not follow the usual GNU command line syntax.
 The first argument is the source PDF file, the second argument is
 the filename of the output SVG file (or a specification, see below
 for details).
+
 .SH OPTIONS
+.TP
+.SS dpi
+use DPI (default = 72)
+.TP
+.SS "page number"
 The third parameter is optional and serves as a page selector. If
 omitted it defaults to the first page of the passed PDF.  If passed it
 must be a valid page label (typically it is a value such as "iii"
 or "3").
-.SS all
-This special selector causes the program to iterate over all pages
+.B all
+- this special selector causes the program to iterate over all pages
 in the PDF.  Because it cannot save multiple pages into one single SVG
 the second parameter is expected to contain a sensible file
-specification:
-.PP
+specification.
+
+.SH EXAMPLE
 .B pdf2svg
 .RI document.pdf
 .RI output\-page%d.svg
+.RI \fI150\fP
 .RI \fIall\fP
 .PP
 The usual format modificators work as well: \fIoutput\-page%02d.svg\fP
