@@ -17,7 +17,7 @@ AC_PROG_CC
 AC_C_CONST
 
 # Use pkg-config to check for the existence of the cairo libraries
-PKG_CHECK_MODULES(CAIRO,cairo >= 1.2.6)
+PKG_CHECK_MODULES(CAIRO,cairo >= 1.16)
 # Use pkg-config to check for the existence of the poppler-glib libraries
 PKG_CHECK_MODULES(POPPLERGLIB,poppler-glib >= 0.5.4)
 
