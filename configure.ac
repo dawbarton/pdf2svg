@@ -8,7 +8,7 @@
 AC_PREREQ(2.60)
 AC_INIT(pdf2svg, 0.2.1, David Barton <davebarton@cityinthesky.co.uk>)
 AC_CONFIG_SRCDIR([pdf2svg.c])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([foreign])
 
 # Checks for programs.
 AC_PROG_CC
