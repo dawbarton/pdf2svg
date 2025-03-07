@@ -8,7 +8,7 @@
 AC_PREREQ(2.60)
 AC_INIT(pdf2svg, 0.2.1, David Barton <davebarton@cityinthesky.co.uk>)
 AC_CONFIG_SRCDIR([pdf2svg.c])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([foreign])
 
 # Checks for programs.
 AC_PROG_CC
@@ -17,7 +17,7 @@ AC_PROG_CC
 AC_C_CONST
 
 # Use pkg-config to check for the existence of the cairo libraries
-PKG_CHECK_MODULES(CAIRO,cairo >= 1.2.6)
+PKG_CHECK_MODULES(CAIRO,cairo >= 1.16)
 # Use pkg-config to check for the existence of the poppler-glib libraries
 PKG_CHECK_MODULES(POPPLERGLIB,poppler-glib >= 0.5.4)
 
